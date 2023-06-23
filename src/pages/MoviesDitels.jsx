@@ -8,7 +8,6 @@ export const MoviesDitels = () => {
   const [movie, setMovie] = useState(null);
   const { movieId } = useParams();
   const location = useLocation();
-
   const goBack = useRef(location?.state?.from || '/');
 
   useEffect(() => {
