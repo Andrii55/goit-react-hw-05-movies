@@ -1,14 +1,19 @@
 import { Link, Outlet } from 'react-router-dom';
+import css from './Layout.module.css';
 
 export const Layout = () => {
   return (
     <>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
+      <ul className={css.item}>
+        <li className={css.items}>
+          <Link className={css.items__link} to="/">
+            Home
+          </Link>
         </li>
-        <li>
-          <Link to="/movies">Movies</Link>
+        <li className={css.items}>
+          <Link className={css.items__link} to="/movies">
+            Movies
+          </Link>
         </li>
       </ul>
       <Outlet />

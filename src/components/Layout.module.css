@@ -1,0 +1,30 @@
+.item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.items:not(:last-child) {
+  margin-right: 100px;
+}
+
+.items__link {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: color, 250ms linear;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.items__link:hover,
+.items__link:focus {
+  color: blue;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+}
