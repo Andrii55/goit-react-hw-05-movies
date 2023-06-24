@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCast } from 'servis/API';
+import css from './Cast.module.css';
 
 const defaultImg =
   'https://upload.wikimedia.org/wikipedia/commons/d/d6/Nophoto.jpg';
@@ -15,10 +16,11 @@ export const Cast = () => {
   return (
     <>
       {cast.length > 0 ? (
-        <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <ul className={css.cast__list}>
           {cast.map(item => (
-            <li key={item.id}>
+            <li className={css.cast__li} key={item.id}>
               <img
+                className={css.cast__img}
                 width={'100px'}
                 src={
                   item.profile_path
@@ -27,12 +29,12 @@ export const Cast = () => {
                 }
                 alt={item.name}
               />
-              <p>{item.name}</p>
+              <p className={css.cast__item}>{item.name}</p>
             </li>
           ))}
         </ul>
       ) : (
-        <p>No cast</p>
+        <p className={css.cast__item}>No cast</p>
       )}
     </>
   );

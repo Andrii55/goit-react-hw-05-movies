@@ -19,7 +19,9 @@ export const MoviesDitels = () => {
   }
   return (
     <div className={css.container}>
-      <Link to={goBack.current}>Go Back</Link>
+      <Link className={css.btn__link} to={goBack.current}>
+        Go Back
+      </Link>
       <img
         className={css.movie__img}
         src={
@@ -34,7 +36,7 @@ export const MoviesDitels = () => {
         Rating: {`${(movie.vote_average * 10).toFixed(1)}`}%
       </p>
       <ul className={css.movie__items}>
-        <li>
+        <li className={css.movie__list}>
           <Link className={css.movie__link} to="cast">
             Cast
           </Link>

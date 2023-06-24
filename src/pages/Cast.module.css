@@ -1,0 +1,23 @@
+.cast__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cast__li {
+  width: calc(100% / 5);
+  height: auto;
+}
+
+.cast__img {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cast__item {
+  font-size: 14px;
+  font-style: oblique;
+  font-weight: bold;
+}

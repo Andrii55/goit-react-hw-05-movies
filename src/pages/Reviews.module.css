@@ -1,0 +1,17 @@
+.reviews__list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.reviews__lists {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reviews__item {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+}

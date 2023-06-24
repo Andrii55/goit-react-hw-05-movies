@@ -53,6 +53,21 @@
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
 }
 
-li:not(:last-child) {
+.movie__list:not(:last-child) {
   margin-right: 10px;
+}
+
+.btn__link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  transition: 250ms color linear;
+}
+
+.btn__link:hover,
+.btn__link:focus {
+  color: blue;
 }
